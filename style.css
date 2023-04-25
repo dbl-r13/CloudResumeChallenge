@@ -5,7 +5,7 @@
 *::after {
     box-sizing: border-box;
 }
-
+ 
 /* Custom Properties */
 :root{
     --ff-primary:'Source Code Pro', sans-serif;
