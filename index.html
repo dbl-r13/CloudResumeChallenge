@@ -7,14 +7,14 @@
     <title>Cloud Resume Challenge</title>
     <link rel="stylesheet" href="./style.css">
 
-    <script>
+    <!-- <script>
         fetch("https://900kkpx3k1.execute-api.us-east-1.amazonaws.com/Deploy/readvisitors")
                 .then(obj => obj.json())
                 .then(data => document.getElementById('counter').innerText = data.body.tester['N']);
 
                 // Here is where I am at in the tutorial:
                 // https://youtu.be/_xkSvufmjEs?t=5846
-    </script>
+    </script> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body> 
@@ -25,10 +25,10 @@
         <button class="nav-toggle" aria-label=""><span class="hamburger"></span></button>
         <nav class="nav">
             <ul class="nav_list">
-                <li class="nav_item" href="#home"><i class="fa-solid fa-house"></i> Home</li>
-                <li class="nav_item" href="#services"><i class="fa-solid fa-keyboard"></i> Services</li>
-                <li class="nav_item" href="#about_me"><i class="fa-solid fa-book"></i> About</li>
-                <li class="nav_item" href="#work"><i class="fa-solid fa-cloud-word"></i> Work</li>
+                <li class="nav_item"><a class="nav_link" href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="nav_item"><a class="nav_link" href="#services"><i class="fa-solid fa-keyboard"></i> Services</a></li>
+                <li class="nav_item""><a class="nav_link" href="#about_me"><i class="fa-solid fa-book"></i> About</a></li>
+                <li class="nav_item""><a class="nav_link" href="#work"><i class="fa-solid fa-laptop"></i> Work</a></li>
             </ul>
         </nav>
     </header>
@@ -123,5 +123,6 @@
             <li class="social_list_item"><a href="https://www.credly.com/badges/6c40847a-85fe-454d-aa2b-70353965777b/public_url" class="social_list_link"><i class="fa-solid fa-code"></i></a></li>
         </ul>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
