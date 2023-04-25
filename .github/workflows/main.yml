@@ -21,4 +21,4 @@ jobs:
         aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }} --exclude ".git/*"
     - name: Invalidate CloudFront Distribution
       run: |
-        aws cloudfront create-invalidation --distribution-id {{ secrets.CF_DISTRIBUTION_ID }} --paths "/*"
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.CF_DISTRIBUTION_ID }} --paths "/*"
