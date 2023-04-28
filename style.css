@@ -64,6 +64,7 @@ img {
 .about_me_img {
     max-width: 500px;
     display: block;
+    justify-content: center;
 }
 
 strong{font-weight: var(--fw-bold);}
