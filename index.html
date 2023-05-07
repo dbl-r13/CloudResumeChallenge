@@ -1,131 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Resume Challenge</title>
-    <link rel="stylesheet" href="./style.css">
-
-    <!-- <script>
-        fetch("https://900kkpx3k1.execute-api.us-east-1.amazonaws.com/Deploy/readvisitors")
-                .then(obj => obj.json())
-                .then(data => document.getElementById('counter').innerText = data.body.tester['N']);
-
-                // Here is where I am at in the tutorial:
-                // https://youtu.be/_xkSvufmjEs?t=5846
-    </script> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body> 
-    <header>
-        <div class="logo">
-            <img src="" alt="" srcset="">
-        </div>
-        <button class="nav-toggle" aria-label=""><span class="hamburger"></span></button>
-        <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav_item"><a class="nav_link" href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li class="nav_item"><a class="nav_link" href="#services"><i class="fa-solid fa-keyboard"></i> Services</a></li>
-                <li class="nav_item""><a class="nav_link" href="#about_me"><i class="fa-solid fa-book"></i> About</a></li>
-                <li class="nav_item""><a class="nav_link" href="#work"><i class="fa-solid fa-laptop"></i> Work</a></li>
-            </ul>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ryan Richard</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Ryan Richard</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="IMG_0113.webp" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                </ul>
+            </div>
         </nav>
-    </header>
-
-    <!-- Introduction Section -->
-    <section class="intro" id="home">
-        <h1 class="section_title section_title_intro">Hello, I am <strong>Ryan Richard</strong></h1>
-        <p class="section_subtitle section_subtitle_intro">Cloud Engineer</p>
-        <!-- <img src="https://images.unsplash.com/photo-1564245659875-79f41f648854?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80" alt="Sunglasses on a wet sandy beach" srcset="" class="intro_img"> -->
-        <img src="Family.webp" class="intro_img">
-
-    </section>
-
-    <!-- Services Section-->
-    <section class="my-services" id="services">
-        <h2 class="section_title section_title_services">What I do</h2>
-        <div class="services">
-            <div class="service">
-                <h3><i class="fa-solid fa-laptop-code"></i> Design + Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea a doloremque error eaque aut laudantium praesentium quae eum id quo, eveniet voluptas pariatur reiciendis quidem laborum blanditiis reprehenderit repellat.</p>
-            </div>
-            <div class="service">
-                <h3><i class="fa-solid fa-shop"></i> E-Commerce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea a doloremque error eaque aut laudantium praesentium quae eum id quo, eveniet voluptas pariatur reiciendis quidem laborum blanditiis reprehenderit repellat.</p>
-            </div>
-            <div class="service">
-                <h3><i class="fa-brands fa-wordpress-simple"></i> Wordpress</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea a doloremque error eaque aut laudantium praesentium quae eum id quo, eveniet voluptas pariatur reiciendis quidem laborum blanditiis reprehenderit repellat.</p>
-            </div>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Ryan
+                        <span class="text-primary">Richard</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Boise Metro Area
+                        <a href="mailto:rgrichard88@gmail.com">rgrichard88@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">
+                    <p>I am a passionate and dedicated Cloud enthusiast with over a decade of Information Technology experience and 2+ years working with Amazon Web Services (AWS). I have multiple Cloud Certifications (listed below) and enjoy creating bash and python scripts for automating daily/weekly tasks to increases productivity and proficiency within my team.</p>
+                    <p>I am currently enrolled in and working through Udemy Course “Docker Mastery: with Kubernetes +Swarm from a Docker Captain”. I am a lifelong learner who is determined to succeed and constantly working on becoming a more innovative insightful leader. </p>
+                    Visits: <span id="visits"></span>
+                    </p>
+                    <div class="social-icons">
+                        <a class="social-icon" target=blank href="https://www.linkedin.com/in/ryan-richard01/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" target=blank href="https://github.com/dbl-r13"><i class="fab fa-github"></i></a>
+                    
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+               <!-- Certifications-->
+               <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certifications</h2>
+                            <a target=blank href="https://www.credly.com/earner/earned/badge/fe95e97a-861d-47a2-b083-04c32d4ed519"><img class="img-size" src="https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"></a>
+                            <a target=blank href="https://www.credly.com/badges/13eca092-5ccd-4d8f-9391-e73576c6f394/public_url"><img class="img-size" src="https://images.credly.com/size/680x680/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"></a>
+                                
+                            <a target=blank href="https://www.credly.com/badges/6c40847a-85fe-454d-aa2b-70353965777b/public_url"><img src="https://images.credly.com/size/680x680/images/99289602-861e-4929-8277-773e63a2fa6f/image.png"></a>
+                            
+                            <a target=blank href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000551636/433c3794jn"><img class="img-size" src="LPI_Icon-Print_Yellow.png"></a>
+                        
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Implementation Engineer</h3>
+                            <div class="subheading mb-3">Kount</div>
+                            <ul>
+                            <li>Manage end-to-end technical integration process for new customer implementations</li>
+                            <li>Assists with post-sales integration and implementation issues to ensure products are working efficiently and effectively for the customer</li>
+                            <li>Stay up to date on industry trends and provide influence over technical initiatives.
+                            </li>
+                            <li>Lead, validate and execute customer's technical solution designs for implementation.
+                            </li>
+                            <li>Assist customers in the development and execution of product test plans</li>
+                            </ul>
+                        </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2021 - Present</span></div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Tier 3 Supportability Specialist</h3>
+                            <div class="subheading mb-3">Intuit</div>
+                            <ul>
+                            <li>Manage and maintains ~45% of the daily run of the business tasks that comes from our SFDC case queue and Slack messaging queue.</li>
+                            <li>Analyze root causes of call drivers and reports bug findings to our Developers and Product Mangers.</li>
+                            <li>Helps facilitates and conduct the process for escalated customers to get their advanced issues resolved quickly.</li>
+                            <li>Assists frontline agents with advanced troubleshooting of SaaS products through Slack, Zoom or in person. </li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2021 </span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Onboarding Specialist</h3>
+                            <div class="subheading mb-3">Intuit</div>
+                            <ul>
+                            <li>Accounted for ~20% of customer implementation calls while maintaining a 4.85 out of 5 Customer Satisfactory Score.
+                            </li>
+                            <li>Responsible for 21% of my team's Monthly Recurring Revenue and 12% of the department's Monthly Recurring Revenue.
+                            </li>
+                            <li>Served as a Subject Matter Expert for advanced troubleshooting for my team, department, and customer software and hardware issues on multiple different platforms.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2019 - 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Genius</h3>
+                            <div class="subheading mb-3">Apple</div>
+                            <ul>
+                            <li>Helped increase efficiencies with scheduling training for new technicians that accelerated certifications by 30%.</li>
+                            <li>Created and presented content to personnel as a Subject Matter Expert in the Technical Department.</li>
+                            <li>Helped disseminate important pertinent information to technical staff by sharing out in daily stand-up meetings.</li>
+                            <li>Mentored and coached technicians to help them better improve their skills, workflows and efficiencies. </li>
+                            <li>Diagnosed, repaired, and returned all devices (iOS and Mac) with low latency and high accuracy.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2015 - 2019</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                    </ul>
+                    <p>
+                    <div class="subheading mb-3">Passionate About</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Amazon Web Services (AWS) Cloud
+                        </li>
+                         <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Infrastructure as Code: Terraform, AWS Serverless Application Model & CloudFormation
+                        </li>
+                    </ul>
+                    <p>
+                    <div class="subheading mb-3">Proficient In</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Linux
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mac Operating Systems
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            HTML/CSS
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Team Collaboration: JIRA & Slack
+                        </li>
+                    </ul>
+                    <p>
+                    <div class="subheading mb-3">Knowledgable About</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Programming/Scripting: Python & JavaScript
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            CI/CD: GitHub, GitHub Actions, AWS CodePipeline
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Serverless Technology: AWS Lambda, AWS ECS, Docker, DynamoDB
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Kaplan University</h3>
+                            <div class="subheading mb-3">Masters of Science</div>
+                            <div>Major: Information Technology</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Graduated: 2015</span></div>
+                        <br>
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Boise State University</h3>
+                        <div class="subheading mb-3">Bachelor of Art</div>
+                        <div>Major: Philosophy</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Graduated: 2009</span></div>
+                    <br>
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Mount San Antonio College</h3>
+                    <div class="subheading mb-3">Associates of Arts</div>
+                    <div>Major: Social and Behavioral Science</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">Graduated: 2007</span></div>
+                <br>
+                 </div>
+            </section>
+            <hr class="m-0" />
         </div>
-        <a href="#work" class="btn">My Work</a>
-    </section>
-
-    <!-- About Me Section -->
-    <section class="about_me" id="about_me">
-        <h2 class="section_title section_title_about"><strong>Who I am</strong></h2>
-        <p class="section_subtitle section_subtitle_about">Cloud Engineer based out of ID</p>
-        <div class="about_me_item">
-
-            <img src="IMG_0113.webp" alt="" class="about_me_img">
-            <div class="about_me_body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta natus deserunt voluptatum accusantium repellat porro nisi assumenda, harum possimus dolor iste voluptatem magni, dicta, repudiandae nesciunt repellendus nulla doloremque! Repellat.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta natus deserunt voluptatum accusantium repellat porro nisi assumenda, harum possimus dolor iste voluptatem magni, dicta, repudiandae nesciunt repellendus nulla doloremque! Repellat.</p>
-            </div>
-            <!-- <img src="https://images.unsplash.com/photo-1529111290557-82f6d5c6cf85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=393&q=80" alt="" srcset="" class="about_me_img"> -->
-        </div>
-    </section>
-
-    <!-- My Work Section-->
-    <section class="work" id="work">
-        <h2 class="section_title section_title_work">My Work</h2>
-        <p class="section_subtitle section_subtitle_work">A Selection of my Range of work</p>
-        <div class="portfolio">
-            <a href="" class="portfolio_item"><img src="https://source.unsplash.com/1600x900/?beach" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item"><img src="https://source.unsplash.com/1600x900/?computer" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item"><img src="https://source.unsplash.com/1600x900/?server" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item"><img src="https://source.unsplash.com/1600x900/?sky" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item"><img src="https://source.unsplash.com/1600x900/?words" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item"><img src="https://source.unsplash.com/1600x900/?books" alt="" class="portfolio_img"></a>
-            
-            <!-- <a href="" class="portfolio_item">X<img src="" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item">X<img src="" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item">X<img src="" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item">X<img src="" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item">X<img src="" alt="" class="portfolio_img"></a>
-            
-            <a href="" class="portfolio_item">X<img src="" alt="" class="portfolio_img"></a>
-        </div> -->
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>Vistor Counter: <span id="counter"></span></p>
-        <i class="fa-solid fa-envelope"></i><a href="#" class="footer_link">Hello@ryan.dev</a>
-        <ul class="social_list">
-            <li class="social_list_item"><a href="https://github.com/klaethecoder" class="social_list_link"><i class="fa-brands fa-github"></i></a></li>
-           
-            <li class="social_list_item"><a href="https://www.instagram.com/p/Bo4D17pBNje/?utm_medium=copy_link" class="social_list_link"><i class="fa-brands fa-instagram"></i></a></li>
-           
-            <li class="social_list_item"><a href="https://www.linkedin.com/in/ryan-richard01" class="social_list_link"><i class="fa-brands fa-linkedin"></i></a></li>
-           
-            <li class="social_list_item"><a href="https://www.credly.com/badges/fe95e97a-861d-47a2-b083-04c32d4ed519/public_url" class="social_list_link"><i class="fa-brands fa-aws"></i></a></li>
-
-            <li class="social_list_item"><a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000551636/433c3794jn" class="social_list_link"><i class="fa-brands fa-linux"></i></a></li>
-
-            <li class="social_list_item"><a href="https://www.credly.com/badges/6c40847a-85fe-454d-aa2b-70353965777b/public_url" class="social_list_link"><i class="fa-solid fa-code"></i></a></li>
-        </ul>
-    </footer>
-    <script src="app.js"></script>
-</body>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+        <!-- Core theme JS-->
+        <!-- <script src="js/scripts.js"></script> -->
+        <!-- Counter JS-->
+        <script src="app.js"></script>
+    </body>
 </html>
