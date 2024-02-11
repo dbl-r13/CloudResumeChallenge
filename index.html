@@ -250,27 +250,8 @@
         <!-- Core theme JS-->
         <!-- <script src="js/scripts.js"></script> -->
         <!-- Counter JS-->
-        <script type="text/javascript" src="getVisited.js"></script>
+        <script  src="getVisited.js"></script>
 
-        <script>
-            let data = document.cookie;
-            if(!data.includes("CRC-RGR")){
-                const expirationDate = Date.now() + (86400000*2); 
-                cookieStore.set({
-                    "value": "Visitor counter that expires 2 days after site has been visited.",
-                    "expires": expirationDate,
-                    "name": "CRC-RGR"
-                });
-                console.log("Successfully added Cookie")
-                addVisited()
-                getVisited()
-
-            } else {
-                console.log("This site has been visited")
-                getVisited()
-                
-            }
-        </script>
         <!-- <script type="text/javascript" src="addVisited.js"></script> -->
 
         <!-- <script type="text/javascript" src="js2.js"></script> -->
